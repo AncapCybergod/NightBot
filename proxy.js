@@ -14,10 +14,8 @@ var nightmare = Nightmare({ show: true,
 const url = 'http://api.ipify.org?format=json'
 
 
-
-
-nightmare
-  .authentication('cybergod') 
+for (i = 0; i < 5; i++) {
+  nightmare
   .goto(url)
  
  
@@ -33,3 +31,7 @@ nightmare
   .catch(function(error) {
     console.error('Search failed:', error)
   })
+  .cookies.clearAll()
+}
+
+

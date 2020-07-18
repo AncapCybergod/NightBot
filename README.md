@@ -1,1 +1,4 @@
 # NightBot
+
+
+`DEBUG=nightmare:*,electron:*`
