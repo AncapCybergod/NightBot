@@ -4,7 +4,8 @@ var Nightmare = require('nightmare')
 var nightmare = Nightmare({ show: true, waitTimeout: 2000 })
 
 
-const url = 'https://soundcloud.com/user-133765374/the-last-love-of-lambert-lupin'
+
+const url = 'http://api.ipify.org?format=json'
 
 
 nightmare
@@ -13,7 +14,7 @@ nightmare
  
   
   .then(function(result) {
-    console.log("result")
+    console.log(result)
   })
   .catch(function(error) {
     console.error('Search failed:', error)
