@@ -11,7 +11,10 @@ const url = 'http://api.ipify.org?format=json'
 nightmare
   .goto(url)
  
- 
+  .evaluate(function() {
+    return document.querySelector('body')
+      .innerHTML;
+  })
   
   .then(function(result) {
     console.log(result)
