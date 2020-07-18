@@ -22,6 +22,11 @@ nightmare
  
  
   
+  .evaluate(function() {
+    return document.querySelector('body')
+      .innerHTML;
+  })
+  
   .then(function(result) {
     console.log(result)
   })
