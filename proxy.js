@@ -11,7 +11,7 @@ var nightmare = Nightmare({ show: true,
                           })
 
 
-const url = '"http://api.ipify.org?format=json"'
+const url = 'http://api.ipify.org?format=json'
 
 
 
